@@ -1,0 +1,33 @@
+
+Creat a STORE Database
+
+CREATE create table LOVE_Store (ID INTEGER PRIMARY KEY,NAME TEXT,Quantity integer,Saling_Price integer,TOtalITEMS_sold INTEGER,Totalprice_sold INTEGER);
+
+INSERT INTO LOVE_STORE VALUES(1, "HAT", 20, 18, 7, 126);
+INSERT INTO LOVE_Store VALUES (2,"Pant", 40, 27, 29, 783);
+  INSERT INTO Love_Store VALUES(4,"Shirt", 30, 19, 30, 570);
+Insert INTO Love_Store VALUES(5,"Shoes", 27,30,19, 28899);
+INSERT INTO Love_Store VALUES(6, "Legging", 38, 12, 32, 384);
+INSERT INTO Love_Store VALUES (7, "Blouse", 58, 17, 51, 867);
+INSERT INTO Love_Store VALUES(8, "Bras", 62, 16, 60, 960);
+INSERT INTO Love_store VALUES (9, "Underwear", 70, 7, 60, 420);
+
+- Review The table Database
+
+SELECT * FROM LOVE_Store;
+
+- Display Order by Sailing Price
+Select Saling_price, Name from Love_Store order by Saling_Price ASC;
+ 
+ - Display Order by Tototalitems_Sold
+SELECT TOtalITEMS_Sold, Name from Love_Store order by TotalITEMS_SOLD ASC;
+
+-Display Aggregation Function of SUM TOTALPRICE_SOLd
+SELECT Sum(TOTALPRICE_SOLD) FROM Love_Store;
+
+-Display Aggrigation Function of SUM TotalITEMS_SOLD
+Select Sum(TOTALITEMS_SOLD) FROM Love_Store;
+
+-Display Aggrigation Function of Min Saling_Price
+Select Min(Saling_price), name from Love_Store
+
